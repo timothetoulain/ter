@@ -10,7 +10,9 @@ files_grabbed=[]
 while True:
 	for files in types:
 		#change path for windows
-		files_grabbed.extend(Path('/home/tim/test').rglob(files))
+		#files_grabbed.extend(Path('/home/tim/test').rglob(files))
+		files_grabbed.extend(Path('C:\\Users\\trip7\\Documents\\test').rglob(files))
+
 		if len(files_grabbed)!=0:
 			print(files_grabbed[0])
 			del files_grabbed[0]

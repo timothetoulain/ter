@@ -1,4 +1,5 @@
 #This script must be run on the raspberry since it is connected to the wifi
+#works only on a linux OS
 
 #!/usr/bin/env python
 # SPDX-License-Identifier: GPL-2.0+

@@ -1,3 +1,4 @@
+#run on linux
 #print all dns requests for the given domains
 from scapy.all import *
 import sys 

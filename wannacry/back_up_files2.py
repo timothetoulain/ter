@@ -4,8 +4,8 @@ import shutil
 import time
 
 def job():
-    source_folder = r'C:\Users\User\Desktop\Bye'    
-    destination_folder = 'C:\Users\User\Desktop\Cheese'  
+    source_folder = r'C:\\Users\\trip7\\Documents\\test'
+    destination_folder = 'C:\\Users\\trip7\\Documents\\backup'
 
     for src_dir, dirs, files in os.walk(source_folder):
         dst_dir = src_dir.replace(source_folder, destination_folder, 1)
@@ -19,7 +19,8 @@ def job():
             shutil.copy(src_file, dst_dir)
 
 #schedule.every().day.at("20:00").do(job)
-schedule.every(3).hours.do(job)
+#schedule.every(3).hours.do(job)
+schedule.every(10).seconds.do(job)
 
 while 1:
     schedule.run_pending()
