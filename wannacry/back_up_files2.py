@@ -17,7 +17,7 @@ def job():
             if os.path.exists(dst_file):
                 os.remove(dst_file)
             shutil.copy(src_file, dst_dir)
-
+#change scheduling depending on the needs
 #schedule.every().day.at("20:00").do(job)
 #schedule.every(3).hours.do(job)
 schedule.every(10).seconds.do(job)
